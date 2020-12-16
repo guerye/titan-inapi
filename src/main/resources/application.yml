@@ -1,0 +1,20 @@
+server:
+ port: 9998
+ servlet:
+  context-path: /inapiServer
+spring:
+ application:
+  name: INAPI-SERVER
+eureka:
+  instance:
+    prefer-ip-address: true
+    #ip-address:172.21.29.75
+  client:
+    serviceUrl:
+      defaultZone: http://titan:df6100@172.20.100.28:7777/eureka/
+      #defaultZone: http://guidong:df6100@172.21.29.55:7777/guidong/eureka/
+      #defaultZone: http://47.92.88.159:7777/eureka/
+logging:
+  level:
+    org.riozenc.inapi: info
+  path: log
