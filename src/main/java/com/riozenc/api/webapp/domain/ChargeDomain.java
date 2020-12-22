@@ -18,6 +18,8 @@ public class ChargeDomain implements MybatisEntity{
 	private Integer ysTypeCode;
 	//应收凭证号
 	private String arrearageNo;
+	//应收凭证Id
+	private String arrearageId;
 	//计量点ID
 	private Long meterId;
 	//抵扣余额
@@ -73,6 +75,15 @@ public class ChargeDomain implements MybatisEntity{
 	private List<Long> meterIds;
 
 	private Long writeSectId;
+
+
+	public String getArrearageId() {
+		return arrearageId;
+	}
+
+	public void setArrearageId(String arrearageId) {
+		this.arrearageId = arrearageId;
+	}
 
 	public Long getWriteSectId() {
 		return writeSectId;
